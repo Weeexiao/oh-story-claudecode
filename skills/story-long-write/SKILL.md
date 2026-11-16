@@ -41,6 +41,10 @@ metadata: {"openclaw":{"source":"https://github.com/zenstory-ai/oh-story-claudec
 
 ---
 
+## 项目启用朱雀写后检测时
+
+正文新写或改写完成后、交付前，读取并执行 `story-zhuque-review/SKILL.md`；检测缺凭据或服务失败须如实告知，不得假称已检测。遵循项目或用户设置，不对未启用的项目擅自上传正文。
+
 ## 写作流程
 
 先确定操作对象、交付范围和停点，再看项目状态；空项目不等于授权完整开书。范围与转正文规则如下。

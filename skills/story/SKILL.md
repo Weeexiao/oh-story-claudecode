@@ -20,6 +20,7 @@ metadata: {"openclaw":{"source":"https://github.com/zenstory-ai/oh-story-claudec
 | 长篇扫榜 | 长篇排行、什么火、新书在冒什么、起点/番茄/晋江/七猫长篇 | `/story-long-scan` |
 | 短篇扫榜 | 短篇排行、知乎盐言排行 | `/story-short-scan` |
 | 选题决策 | 写什么能爆、帮我选题、选题方向 | 长篇 `/story-long-scan`，短篇 `/story-short-scan`；没说篇幅先问一句 |
+| 朱雀检测与审校 | 朱雀检测、AI 痕迹检测、写后检测 | `/story-zhuque-review` |
 | 去 AI 味 | 去 AI 味、太 AI、去味 | `/story-deslop` |
 | 审查稿件 | 审查、审稿、帮我审一下、一致性检查、看看有没有问题 | `/story-review` |
 | 封面 | 封面、封面图 | `/story-cover` |
