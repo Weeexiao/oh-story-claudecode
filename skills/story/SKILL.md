@@ -32,8 +32,22 @@ metadata: {"openclaw":{"source":"https://github.com/zenstory-ai/oh-story-claudec
 | 管理作者习惯 | 记住我的写作习惯、作者画像、待确认偏好、忘掉这个偏好 | 见下方「作者习惯管理」 |
 | 查故事资料 | 查角色、查伏笔、查进度、查设定、什么状态、写到哪了 | 见下方「查询」 |
 | 查资料 | 查资料、帮我查资料、调研、搜索一下、搜一下 | 见下方「查询」 |
+| 小说逐章改编 | 逐章拆解、二次创作改编、原文细纲+改编细纲、每十章检查 | `/novel-adaptation-pipeline` |
+| 小说影视化分镜 | 影视化分镜、章节分镜、镜头拆解、9镜、剧情细纲 | `/novel-storyboard-script` |
+| 电影分镜/H3 提示词 | 分镜设计、电影化镜头、运镜、H3 提示词、全能参考模型 | `/minimax-h3-storyboard-director` |
+| 系列短剧选题到剧本 | 下一集拍什么、题材撞车排查、选题打分、系列短剧完整剧本 | `/shortdrama-topic-script` |
+| POV 第一人称短片 | POV、第一人称分镜、代入感短片、沉浸叙事 | `/pov-shortdrama` |
+| 离谱人数喜剧短片 | 离谱人数、荒诞日常、人数放大、人数系列 | `/crowd-scale-shorts` |
+| 场景资产图 | 场景四视角、场景一致性、场景参考图、四宫格 | `/ai-short-drama-scene-assets` |
+| 角色设定图 | 角色设定、角色三视图、表情表、角色一致性、OC 设计 | `/character-design-sheet` |
+| 人物参考图 | 人物多角度参考、角色参考图提示词、人物一致性参考 | `/character-reference-generator` |
+| 歌曲 MV | 对口型 MV、唱词跟音频、歌曲驱动视频、逐字唱词 | `/audio-driven-mv` |
 
 能明确匹配就直接调用对应 skill；匹配不上时只问缺的那一项。用户说"我想写小说"但没说长篇还是短篇，先问篇幅再路由。
+
+### 扩展技能：小说到视频改编管线
+
+路由表后 10 行是扩展技能，覆盖「小说 → 分镜 → 短剧/视频」的改编与制作链路，与上面的网文写作 skill 平级，按各自 skill 名直接调用。典型串联：`/novel-adaptation-pipeline`（逐章改编）→ `/novel-storyboard-script` 或 `/minimax-h3-storyboard-director`（分镜与提示词）→ `/shortdrama-topic-script`、`/pov-shortdrama`、`/crowd-scale-shorts`（成片剧本）→ `/ai-short-drama-scene-assets`、`/character-design-sheet`、`/character-reference-generator`（视觉资产）→ `/audio-driven-mv`（歌曲成片）。视觉类技能生成图片时可配合宿主已有的生图能力。
 
 ### 裸调用与新手
 

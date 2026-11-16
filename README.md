@@ -21,7 +21,7 @@
 <p align="center">
   <a href="https://github.com/zenstory-ai/oh-story-claudecode/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/zenstory-ai/oh-story-claudecode?style=flat-square&color=22D3EE&logo=github&logoColor=white&label=Stars"></a>
   <a href="https://github.com/zenstory-ai/oh-story-claudecode/releases/latest"><img alt="Release" src="https://img.shields.io/github/v/release/zenstory-ai/oh-story-claudecode?style=flat-square&color=081431&label=Release"></a>
-  <img alt="Skills 13" src="https://img.shields.io/badge/Skills-13-081431?style=flat-square">
+  <img alt="Skills 23" src="https://img.shields.io/badge/Skills-23-081431?style=flat-square">
   <a href="./LICENSE"><img alt="License MIT" src="https://img.shields.io/badge/License-MIT-1F6FEB?style=flat-square"></a>
 </p>
 
@@ -35,7 +35,7 @@
 ## 这是什么
 
 Oh Story 覆盖长篇与短篇网络小说的全流程：**扫榜选材 → 拆解爆款 → 搭大纲写正文 → 去AI味 → 生成封面图**。
-它以 13 个 skill 的形式装进你已经在用的编程 Agent，写作用的模型就是该 Agent 的模型，不需要 GPU，也不需要另外配模型。
+它以 23 个 skill 的形式装进你已经在用的编程 Agent，写作用的模型就是该 Agent 的模型，不需要 GPU，也不需要另外配模型。
 
 - **用文件系统当记忆** — 设定、大纲、正文、追踪各自独立维护，压缩上下文或更换会话后，从文件恢复当前进度、伏笔和未完承诺。
 - **确定性检查与门禁** — 长篇写前检查细纲和追踪，写后检查截断、工程词和常见 AI 句式。支持 hooks 的宿主自动执行对应检查，其他环境按 skill 流程执行。
@@ -339,7 +339,7 @@ flowchart LR
 
 ### 能在 Codex、Google Antigravity、OpenCode 里用吗，还是只支持 Claude Code？
 
-oh-story-claudecode 内置适配 Claude Code、Google Antigravity、OpenCode、ZCode、OpenClaw、Codex CLI 和 Reasonix。Codex 会直接扫描仓库内 `.agents/skills` 发现 13 个 skill，用 `$story-setup` 调用；Antigravity 用 `/skills` 或自然语言运行 `story-setup`，它会自动识别当前宿主（`target_cli=antigravity`）；OpenCode 需要 2.x，1.x 加载不了写正文守卫插件；能读取项目文件的 Web AI / Agent 环境也可以按通用 skills 路径使用。
+oh-story-claudecode 内置适配 Claude Code、Google Antigravity、OpenCode、ZCode、OpenClaw、Codex CLI 和 Reasonix。Codex 会直接扫描仓库内 `.agents/skills` 发现 23 个 skill，用 `$story-setup` 调用；Antigravity 用 `/skills` 或自然语言运行 `story-setup`，它会自动识别当前宿主（`target_cli=antigravity`）；OpenCode 需要 2.x，1.x 加载不了写正文守卫插件；能读取项目文件的 Web AI / Agent 环境也可以按通用 skills 路径使用。
 
 ### 需要 GPU 或自己部署模型吗？
 

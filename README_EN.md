@@ -24,7 +24,7 @@
 <p align="center">
   <a href="https://github.com/zenstory-ai/oh-story-claudecode/stargazers"><img alt="Stars" src="https://img.shields.io/github/stars/zenstory-ai/oh-story-claudecode?style=flat-square&color=22D3EE&logo=github&logoColor=white&label=Stars"></a>
   <a href="https://github.com/zenstory-ai/oh-story-claudecode/releases/latest"><img alt="Release" src="https://img.shields.io/github/v/release/zenstory-ai/oh-story-claudecode?style=flat-square&color=081431&label=Release"></a>
-  <img alt="Skills 13" src="https://img.shields.io/badge/Skills-13-081431?style=flat-square">
+  <img alt="Skills 23" src="https://img.shields.io/badge/Skills-23-081431?style=flat-square">
   <a href="./LICENSE"><img alt="License MIT" src="https://img.shields.io/badge/License-MIT-1F6FEB?style=flat-square"></a>
 </p>
 
@@ -38,7 +38,7 @@
 ## What it is
 
 Oh Story covers the whole web-fiction pipeline, long-form and short: **chart scanning → deconstructing bestsellers → outline and prose → de-AI editing → cover art**.
-It installs as 13 skills into the coding agent you already use; the writing model is that agent's model. No GPU, no separate model setup.
+It installs as 23 skills into the coding agent you already use; the writing model is that agent's model. No GPU, no separate model setup.
 
 - **The file system is the memory** — settings, outlines, prose and continuity tracking live in separate files. After context compaction or a session change, the workflow reloads progress, clues and unfinished commitments from those files.
 - **Deterministic checks and gates** — long-form writing checks the blueprint and tracking before drafting, then checks truncation, engineering vocabulary and common AI phrasing. Hosts with hook support automate the relevant checks; other environments follow the skill workflow.
@@ -346,7 +346,7 @@ I built this skill pack to help me through a job-hunting transition :joy:, and I
 
 ### Does it work in Codex, Google Antigravity or OpenCode, or only in Claude Code?
 
-oh-story-claudecode ships adapters for Claude Code, Google Antigravity, OpenCode, ZCode, OpenClaw, Codex CLI and Reasonix. Codex discovers the 13 skills by scanning `.agents/skills` in the repo and invokes them with `$story-setup`; in Antigravity run `story-setup` via `/skills` or natural language; it detects the current host (`target_cli=antigravity`) on its own. OpenCode needs 2.x, since 1.x cannot load the prose-guard plugin. Any Web AI or agent environment that can read project files can use the generic skills path.
+oh-story-claudecode ships adapters for Claude Code, Google Antigravity, OpenCode, ZCode, OpenClaw, Codex CLI and Reasonix. Codex discovers the 23 skills by scanning `.agents/skills` in the repo and invokes them with `$story-setup`; in Antigravity run `story-setup` via `/skills` or natural language; it detects the current host (`target_cli=antigravity`) on its own. OpenCode needs 2.x, since 1.x cannot load the prose-guard plugin. Any Web AI or agent environment that can read project files can use the generic skills path.
 
 ### Do I need a GPU or to host a model?
 
